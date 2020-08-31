@@ -1,6 +1,3 @@
-get '/' do
-  File.read(File.join('app/views', 'index.html'))
-end
 def humanized_time_ago(time_ago_in_minutes)
   if time_ago_in_minutes >= 60
     "#{time_ago_in_minutes / 60} hours ago"
@@ -47,5 +44,6 @@ get '/' do
       username: "marlin_peppa",
       text: "lunchtime! ;)"
     }]
-  }
+  }  
+    [finstagram_post_shark, finstagram_post_whale, finstagram_post_marlin].to_s
 end
